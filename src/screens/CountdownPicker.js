@@ -130,7 +130,7 @@ export default class CountdownPicker extends Component {
     handleDone = () => {
         let {duration} = this.state;
         this.setState({
-            redir: `/timer/${duration[0]}/${duration[1]}/${duration[2]}/f`
+            redir: `/timer/${duration[0]}/${duration[1]}/${duration[2]}/waiting`
         })
     }
     render() {

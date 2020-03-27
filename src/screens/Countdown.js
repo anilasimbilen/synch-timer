@@ -28,8 +28,8 @@ export default class Countdown extends Component {
             hrs: Number(this.props.hours),
             mins: Number(this.props.minutes),
             secs: Number(this.props.seconds),
-            isStarted: this.props.starting !== "f",
-            startingTime:  this.props.starting === "f" ? null : Number(this.props.starting),
+            isStarted: this.props.starting !== "waiting",
+            startingTime:  this.props.starting === "waiting" ? null : Number(this.props.starting),
             background: [52,196,47],
             inits: {hrs: Number(this.props.hours),
                 mins: Number(this.props.minutes),
@@ -109,7 +109,7 @@ export default class Countdown extends Component {
                                         Share
                                     </InputGroup.Text>
                                 </InputGroup.Prepend>
-                                <FormControl value={window.location.toString().replace("f", this.state.startingTime)}/>
+                                <FormControl value={window.location.toString().replace("waiting", this.state.startingTime)}/>
                             </InputGroup>
                              }
                         </div>
