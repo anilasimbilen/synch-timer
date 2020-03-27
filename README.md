@@ -1,3 +1,6 @@
+Simple timer with sharing options written with React.js
+Deployed on [https://synch-timer.netlify.com](https://synch-timer.netlify.com)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
